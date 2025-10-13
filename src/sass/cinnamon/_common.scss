@@ -5,8 +5,8 @@
 
 $asset_path: assets;
 $font-size: 10;
-$panel_bg: rgba($panel-solid, 0.75);
-$panel_fg: on($panel-solid, secondary);
+$panel_bg: rgba($grey-800, 1);
+$panel_fg: on($grey-800, secondary);
 
 stage {
   // @include fontsize($font-size);
@@ -396,8 +396,8 @@ $menu_item_radius: $corner-radius;
 
     &:dnd {
       background-gradient-direction: vertical;
-      background-gradient-start: rgba($error, 0.35);
-      background-gradient-end: rgba($error, 0.35);
+      background-gradient-start: rgba(255,0,0,0.05);
+      background-gradient-end: rgba(255,0,0,0.2);
     }
 
     &:ltr { padding-right: 4px; }
@@ -414,8 +414,8 @@ $menu_item_radius: $corner-radius;
   &Right {
     &:dnd {
       background-gradient-direction: vertical;
-      background-gradient-start: rgba($suggested, 0.35);
-      background-gradient-end: rgba($suggested, 0.35);
+      background-gradient-start: rgba(0,0,255,0.05);
+      background-gradient-end: rgba(0,0,255,0.2);
     }
 
     &:ltr { padding-left: $space-size; spacing: 0px; }
@@ -434,8 +434,8 @@ $menu_item_radius: $corner-radius;
 
     &:dnd {
       background-gradient-direction: vertical;
-      background-gradient-start: rgba($success, 0.35);
-      background-gradient-end: rgba($success, 0.35);
+      background-gradient-start: rgba(0,255,0,0.05);
+      background-gradient-end: rgba(0,255,0,0.2);
     }
   }
 }
@@ -446,6 +446,7 @@ $menu_item_radius: $corner-radius;
     font-size: 1em;
     padding: 0px;
     background-color: $panel_bg;
+    border-top: 1px solid rgba($grey-650, 0.75);
     box-shadow: 0 0 5px rgba(#000, 0.5), 0 0 16px rgba(#000, 0.24);
 
     .panel-button,
@@ -1704,11 +1705,11 @@ $menu_item_radius: $corner-radius;
     font-weight: normal;
     transition-duration: 100ms;
     border: none;
-    margin: 0;
+    margin: 0 1px;
     color: rgba($panel_fg, 0.6);
     border-radius: 0;
     spacing: $space-size;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
 
     &.top, &.bottom {
       padding: 0 2px;

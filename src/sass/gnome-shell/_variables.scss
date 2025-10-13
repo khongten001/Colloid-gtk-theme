@@ -36,11 +36,11 @@ $window_radius: 12px;
 $menu_radius: $base_radius + $base_padding;
 $modal_radius: $menu_radius;
 @if $sharp == "true" {
-  $base_radius: 0px;
-  $icon_radius: 0px;
-  $window_radius: 0px;
-  $menu_radius: 0px;
-  $modal_radius: 0px;
+  $base_radius: 2px;
+  $icon_radius: 2px;
+  $window_radius: 2px;
+  $menu_radius: 2px;
+  $modal_radius: 2px;
 }
 
 
